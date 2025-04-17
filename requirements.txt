@@ -1,0 +1,8 @@
+jupyter
+matplotlib
+numpy
+numba
+noise
+scipy
+scikit-image
+tqdm
