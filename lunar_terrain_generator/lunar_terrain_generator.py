@@ -198,7 +198,7 @@ class LTGen:
             get cumulative number of craters over 1km for a given age
             t: age in Gyr
         """
-        return (5.44e-14)*(np.exp(6.93*t)-1)+(6.33e-4)*t
+        return (5.44e-14)*(np.exp(6.93*t)-1)+(8.38e-4)*t
 
 
     def neukum_prod_new(self, D, a0=-3.087):
