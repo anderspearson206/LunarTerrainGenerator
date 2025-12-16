@@ -1,3 +1,34 @@
+"""
+Lunar Terrain Generator (LTGen)
+
+Description:
+    A physics-informed synthetic terrain generator for lunar surfaces. This module 
+    implements statistical cratering models and topographic diffusion to synthesize 
+    realistic Digital Elevation Models (DEMs) of the lunar maria and highlands.
+
+    Key features include:
+    - Crater Production: Based on Neukum et al. (2001) production functions.
+    - Crater Morphology: Based on meter-scale profiles from Cai & Fa (2020).
+    - Erosion: Modeled via topographic diffusion (Fassett & Thomson, 2014).
+    - Micro-roughness: Sub-resolution rock abundance and regolith gardening.
+
+References:
+    [1] Cai, Y., & Fa, W. (2020). "Meter-scale topographic roughness of the Moon: 
+        The effect of small impact craters." Journal of Geophysical Research: Planets, 
+        125, e2020JE006429. https://doi.org/10.1029/2020JE006429
+    
+    [2] Neukum, G., Ivanov, B. A., & Hartmann, W. K. (2001). "Cratering records 
+        in the inner solar system in relation to the lunar reference system." 
+        Space Science Reviews, 96, 55-86.
+
+    [3] Fassett, C. I., & Thomson, B. J. (2014). "Crater degradation on the lunar 
+        maria: Topographic diffusion and the rate of erosion on the Moon." 
+        Journal of Geophysical Research: Planets, 119, 2255-2271.
+
+Author: Anders Michael Pearson
+Date: 2025
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import numba
@@ -7,6 +38,9 @@ from noise import pnoise2
 from scipy.spatial import ConvexHull
 from skimage.draw import polygon
 from tqdm import tqdm
+
+
+
 
 # had to put this method out of the class because 
 # numba doesn't work within classes
