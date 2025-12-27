@@ -2,8 +2,6 @@
 
 A procedural lunar terrain heightmap generator for Python. The terrain generation is based on real lunar data and is set to generate terrain at a scale of **1 meter per pixel**.
 
-See the full [Methodology Document](docs/methodology.pdf) for details on the implementation.
-
 This work was used in [Radiolunadiff: Estimation of wireless network signal strength in lunar terrain](https://arxiv.org/abs/2509.14559)
 
 Example usage is provided in `example.ipynb`.
@@ -12,6 +10,8 @@ Example usage is provided in `example.ipynb`.
 
 This generator was developed using real lunar topographic data at a **2 meter per pixel** scale obtained from the [LROC RDR Data Portal](https://wms.lroc.asu.edu/lroc/rdr_product_select).  
 To ensure realism, the generated terrain was validated against real lunar topographic statistics.
+
+See the full [Methodology Document](docs/methodology.pdf) for details on the implementation.
 
 ## Example Outputs
 
